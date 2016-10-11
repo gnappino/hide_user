@@ -4,9 +4,12 @@ Questo repo contiene un estensione di google chrome che serve specificatamente p
 
 Se volete contattarmi scrivete a gnappinox1 su thegamesmachine.it
 
+# Versione 0.7#
+Adesso nasconde anche i post messi in ignore da parte del forum.
+
 # Funzionamento #
 
-Scaricate il file zip, estraete la cartella, si salva da qualche parte sul vostro pc, da google chrome nella schermata estensioni abilitate la modalità sviluppatori ed aggiungete la cartella dell'estensione, in questo modo google non si incazza e non blocca l'estesione. ( 5 euro per comprare la licenza sviluppatori non ce li metto va! )
+Scaricate il file zip, estraete la cartella, si salva da qualche parte sul vostro pc, da google chrome nella schermata estensioni abilitate la modalità sviluppatori ed aggiungete la cartella dell'estensione, in questo modo google non si incazza e non blocca l'estesione. ( 5 dollah per comprare la licenza sviluppatori non mi va di spenderli, anche se sono moolto tentato )
 
 Una volta installata, comparirà affianco alla barra dell'indirizzo un pulsante con la lettera N
 Cliccandoci, compare un area di testo, si cancella il testo undefined e si scrive il nome dell'utente che deve scomparire, se sono più utenti i nomi devono essere scritti separati da un punto e virgola.
