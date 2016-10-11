@@ -1,0 +1,21 @@
+{
+  "name": "Nascondi Svapo",
+  "description": "Nasconde gli utenti molesti su TheGamesMachine",
+  "version": "0.7",
+  "permissions": [
+    "activeTab","*://*.thegamesmachine.it/forum/*","storage"
+  ],
+  "web_accessible_resources": [
+    "test.js"
+  ],
+  "browser_action": {
+    "default_title": "Nascondi utenti",
+	"default_popup": "popup.html"
+  },
+  "content_scripts": [{
+	"matches": ["*://*.thegamesmachine.it/forum/*"],
+    "js": ["test.js"],
+	"run_at": "document_end"
+    }],
+  "manifest_version": 2
+}
