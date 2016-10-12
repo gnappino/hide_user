@@ -1,0 +1,91 @@
+h1{
+    text-align:center;
+}
+
+body{
+    background-color:#C9DBFF;
+    width:500px;    
+    height:300px;
+}
+
+.author{
+   text-align:right;
+   font-style:italic;
+}
+
+.info{
+    font-style:oblique;
+    text-align:center;
+}
+
+.text{
+    text-align:center;
+}
+
+.area{
+    border-radius:8px;
+    background-color:#A5B5D9;
+    border-style:none;
+}
+
+.area:focus{
+    border:solid;
+    border-color:#5C7099;
+}
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.check {
+	width: 120px;
+	height: 40px;
+	background: #333;
+	margin: auto;
+    top:10px;
+	border-radius: 50px;
+	position: relative;
+}
+
+
+.check:before {
+	content: 'On';
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	height: 2px;
+	color: #26ca28;
+	font-size: 16px;
+}
+
+.check:after {
+	content: 'Off';
+	position: absolute;
+	top: 12px;
+	left: 84px;
+	height: 2px;
+	color: #DC143C;
+	font-size: 16px;
+}
+
+.check label {
+	display: block;
+	width: 52px;
+	height: 22px;
+	border-radius: 50px;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	z-index: 1;
+	left: 12px;
+	background: #DC143C;
+}
+
+#ONOFF:checked + label {
+	left: 60px;
+	background: #26ca28;
+}
+
+
+
