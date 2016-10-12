@@ -4,7 +4,10 @@ Questo repo contiene un estensione di google chrome che serve specificatamente p
 
 Se volete contattarmi scrivete a gnappinox1 su thegamesmachine.it
 
-# Versione 0.7#
+# Versione 0.71#
+Aggiornata la grafica by Kallor
+
+####Versione 0.7####
 Adesso nasconde anche i post messi in ignore da parte del forum.
 
 # Funzionamento #
