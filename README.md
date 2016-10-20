@@ -3,6 +3,8 @@
 Questo repo contiene un estensione di google chrome che serve specificatamente per nascondere i post, quote ed i thread creati da svapo o qualsiasi utente vi porti fastidio su thegamesmachine.it
 
 Se volete contattarmi scrivete a gnappinox1 su thegamesmachine.it
+# Versione 0.72#
+Sistemato il bug nel caso dei multiquote
 
 # Versione 0.71#
 Aggiornata la grafica by Kallor

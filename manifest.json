@@ -1,7 +1,7 @@
 {
   "name": "Nascondi Svapo",
   "description": "Nasconde gli utenti molesti su TheGamesMachine",
-  "version": "0.7",
+  "version": "0.72",
   "permissions": [
     "activeTab","*://*.thegamesmachine.it/forum/*","storage"
   ],
