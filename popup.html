@@ -1,20 +1,31 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Nascondi svapo</title>
-    <script src="popup.js"></script>
-     <link rel="stylesheet" type="text/css" href="popup.css">
-  </head>
-  <body>
-    <h1>Nascondi utenti</h1>
-	<p class="info">Per nascondere un utente scrivere il nome nel riquadro in basso. Per inserire piu' nomi utente separarli con un ;</p>
-    <div class="text">
-        <textarea class="area" id="lista" rows="5" cols="50"></textarea><br>
-    <div>
-    <div class="check">
-    <input type="checkbox"  id="ONOFF" name="Attiva" value="bho">
-	<label for="ONOFF"></label>
-    </div>
-    <p class="author">By Gnappinox1<br>Styled by Kallor</p>
-   </body>
+	<head>
+		<title>Nascondi svapo</title>
+		<script src="grid/editablegrid.js"></script>
+		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_renderers.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_editors.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_validators.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_utils.js" ></script>
+		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_charts.js" ></script>
+		<link rel="stylesheet" href="grid/editablegrid.css" type="text/css" media="screen">
+		<script src="popup.js"></script>
+		<link rel="stylesheet" type="text/css" href="popup.css">
+	</head>
+	<body>
+		<h1>Nascondi utenti V1</h1>
+		<p class="info">Per nascondere un utente scrivere il nome nella tabella in basso<br>Per sostituire il testo del post, oltre al nome bisogna scrivere il nuovo testo nella colonna affianco al nome</p>
+		<div class="text">
+				<textarea class="area" id="lista" rows="5" cols="50"></textarea><br>
+		</div>
+
+		<div id="tablecontent"></div>
+
+
+		<div class="check">
+			<input type="checkbox"  id="ONOFF" name="Attiva" value="bho">
+			<label for="ONOFF"></label>
+		</div>
+		<!-- <p class="author">By Gnappinox1<br>Styled by Kallor</p>  -->
+	 </body>
 </html>
