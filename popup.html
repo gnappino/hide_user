@@ -2,15 +2,12 @@
 <html>
 	<head>
 		<title>Nascondi svapo</title>
-		<script src="grid/editablegrid.js"></script>
-		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_renderers.js" ></script>
-		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_editors.js" ></script>
-		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_validators.js" ></script>
-		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_utils.js" ></script>
-		<!-- [DO NOT DEPLOY] --> <script src="grid/editablegrid_charts.js" ></script>
-		<link rel="stylesheet" href="grid/editablegrid.css" type="text/css" media="screen">
-		<script src="popup.js"></script>
 		<link rel="stylesheet" type="text/css" href="popup.css">
+		<link type="text/css" rel="stylesheet" href="griglia/jsgrid.min.css" />
+		<link type="text/css" rel="stylesheet" href="griglia/jsgrid-theme.min.css" />
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="griglia/jsgrid.min.js"></script>
+		<script src="popup.js"></script>
 	</head>
 	<body>
 		<h1>Nascondi utenti V1</h1>
@@ -19,13 +16,12 @@
 				<textarea class="area" id="lista" rows="5" cols="50"></textarea><br>
 		</div>
 
-		<div id="tablecontent"></div>
-
+		<div id="jsGrid"></div>
 
 		<div class="check">
-			<input type="checkbox"  id="ONOFF" name="Attiva" value="bho">
+			<input type="checkbox"	id="ONOFF" name="Attiva" value="bho">
 			<label for="ONOFF"></label>
 		</div>
-		<!-- <p class="author">By Gnappinox1<br>Styled by Kallor</p>  -->
+		<p class="author">By Gnappinox1<br>Styled by Kallor</p>
 	 </body>
 </html>

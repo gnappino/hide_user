@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', AggListener,false)
 var out;
 function AggListener(){
 	var ck=document.getElementById("ONOFF");
-	console.log(ck);
+//	console.log(ck);
 	CreaTabella();
+	InserisciDati();
+	/*
 	chrome.storage.sync.get("Attivo", function(items) {
 		if (!chrome.runtime.error) {
 			//console.log(items);
@@ -20,11 +22,12 @@ function AggListener(){
 	chrome.storage.sync.get("Nomi", function(items) {
 		if (!chrome.runtime.error) {
 		ElencoNomi=items["Nomi"];
-//    var ta=document.getElementById("lista");
+//		var ta=document.getElementById("lista");
 		ta.value=ElencoNomi;
 		//ta.addEventListener("keypress",Test,false);
 		}
 	});
+*/
 }
 
 function Test(){
@@ -43,21 +46,34 @@ function Test(){
 }
 
 function CreaTabella(){
-	var metadata = [];
-	metadata.push({ name: "name", label: "Nome utente", datatype: "string", editable: true});
-	metadata.push({ name: "str_rep", label:"Messaggio", datatype: "string", editable: true});
+	var clients = [
+					{ "Nome": "Prova", "Frase": "Testo"}
+			];
 
-	var data = [];
-	data.push({id: 3, values: ["Svapo","IO SONO PIPPO"]});
-	editableGrid = new EditableGrid("TabellaUtenti",{modelChanged: Cambiamento});
-	editableGrid.load({"metadata": metadata, "data": data});
-	editableGrid.renderGrid("tablecontent", "testgrid");
-	console.log("Tabella creata");
-	//editableGrid.addEventListener("modelChanged",Cambiamento)
+			$("#jsGrid").jsGrid({
+					width: "100%",
+					height: "400px",
+
+					inserting: true,
+					editing: true,
+					sorting: false,
+					paging: false,
+
+					data: [],
+
+					fields: [
+							{ name: "Nome", type: "text", width: 150, validate: "required" },
+							{ name: "Frase", type: "text", width: 400 },
+					]
+			});
+			var grid = $("#jsGrid").data("JSGrid");
+			$("#jsGrid").jsGrid("insertItem", { Nome: "John", Frase: "25" }).done(function() {
+			    console.log("insertion completed");
+			});
+			grid.insertItem({ Nome: "Pippo", Frase: "Antonella"});
+			//console.log(grid);
 }
 
-function Cambiamento(rowIndex, columnIndex, oldValue, newValue, row){
-	console.log("Cambiamento:"+newValue);
-	console.log("Riga:"+rowIndex);
-	console.log(row);
+function InserisciDati(){
+
 }
