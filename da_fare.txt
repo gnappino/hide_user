@@ -1,4 +1,3 @@
-Aggiungere callBack nella tabella per inserimento dati
 Modificare salvataggio dati, in formato tabellare
 Lettura dati, da Tabella
 Inserire parte che sostituisce il testo

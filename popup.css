@@ -4,8 +4,8 @@ h1{
 
 body{
     background-color:#C9DBFF;
-    width:500px;    
-    height:300px;
+    width:600px;
+    height:400px;
 }
 
 .author{
@@ -86,6 +86,3 @@ input[type=checkbox] {
 	left: 60px;
 	background: #26ca28;
 }
-
-
-
