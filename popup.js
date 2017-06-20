@@ -42,7 +42,7 @@ function CreaTabella(){
 					data: [],
 
 					fields: [
-							{ name: "Nome", type: "text", width: 150, validate: "required" },
+							{ name: "Nome", type: "text", width: 120, validate: "required" },
 							{ name: "Frase", type: "text", width: 350 },
 							{ type: "control" }
 					]
