@@ -5,6 +5,7 @@ function AggListener(){
 	var ck=document.getElementById("ONOFF");
 
 	$.when(CreaTabella()).done(Aggiornamento());
+//	CreaTabella();
 	chrome.storage.sync.get("Attivo", function(items) {
 		if (!chrome.runtime.error) {
 		if (items["Attivo"]=="SI"){
@@ -25,6 +26,8 @@ function AggiornaON_OFF(){
 }
 
 function SalvaDati(dati){
+//	console.log("Salva Dati");
+//	console.log(dati);
 	chrome.storage.sync.set({ "Nomi_Grid" : dati });
 }
 
@@ -81,8 +84,10 @@ function CreaTabella(){
 					ElencoNomi=items["Nomi_Grid"];
 					console.log("Elenco Nomi");
 					console.log(ElencoNomi);
-					Grid.data=ElencoNomi;
-					Grid.refresh();
+					if (ElencoNomi!=undefined) {
+						Grid.data=ElencoNomi;
+						Grid.refresh();
+					}
 				}
 			});
 			console.log("Tabella creata")
