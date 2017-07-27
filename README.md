@@ -3,11 +3,11 @@
 Questo repo contiene un estensione di google chrome che serve specificatamente per nascondere o modificare i post, quote ed i thread creati da svapo o qualsiasi utente vi porti fastidio su thegamesmachine.it
 
 Se volete contattarmi scrivete a gnappinox1 su thegamesmachine.it
-## Versione 0.8 (TEST)
+## Versione 0.8
 Aggiunta possibilità di scrivere un messaggio di testo per sostituire il post inserito dall'utente, senza nasconderlo.
 Tutte le funzioni precedenti sono rimaste invariate.
 
-20/06/2017
+27/07/2017
 
 ## Versione 0.72
 Sistemato il bug nel caso dei multiquote
@@ -32,4 +32,5 @@ Piccola nota, il codice a grandi linee è quello della versione precedente, ho i
 
 ##### SI SVAPO, L'HO CREATO PRINCIPALMENTE PER TE, CONTENTO?
 
-## Svapo è permabannato, lunga vita a Svapo!!!
+## ~~Svapo è permabannato, lunga vita a Svapo!!!~~
+## A quanto pare non più, poco male ;-)

@@ -4,8 +4,8 @@ var Grid;
 function AggListener(){
 	var ck=document.getElementById("ONOFF");
 
-	$.when(CreaTabella()).done(Aggiornamento());
-//	CreaTabella();
+	//$.when(CreaTabella()).done(Aggiornamento());
+	$.when(CreaTabella()).done();
 	chrome.storage.sync.get("Attivo", function(items) {
 		if (!chrome.runtime.error) {
 		if (items["Attivo"]=="SI"){
@@ -51,10 +51,6 @@ function CreaTabella(){
 					]
 			});
 			Grid = $("#jsGrid").data("JSGrid");
-			// $("#jsGrid").jsGrid("insertItem", { Nome: "John", Frase: "25" }).done(function() {
-			// 		console.log("insertion completed");
-			// });
-			// Grid.insertItem({ Nome: "Pippo", Frase: "Antonella"});
 			console.log(Grid.data);
 			$("#jsGrid").jsGrid({
 					onItemInserted: function(args) {
@@ -91,34 +87,4 @@ function CreaTabella(){
 				}
 			});
 			console.log("Tabella creata")
-}
-
-function Aggiornamento(){
-	console.log("Aggiornamento");
-	chrome.storage.sync.get("Ver", function(items) {
-			if (!chrome.runtime.error) {
-				Vers=items["Ver"];
-				console.log("1");
-				AggiungiNomi(Vers);
-			}
-		});
-}
-
-function AggiungiNomi(Vers){
-	if (Vers===undefined ){
-		console.log("2");
-		chrome.storage.sync.get("Nomi", function(items) {
-				if (!chrome.runtime.error) {
-					console.log("3");
-					ElencoNomi=items["Nomi"];
-					ElencoNomi=ElencoNomi.split(";");
-					console.log("ElencoNomi");
-					console.log(ElencoNomi)
-					console.log(Grid);
-					for (i=0;i<ElencoNomi.length;i++)
-						Grid.insertItem({Nome:ElencoNomi[i], Frase:""});
-					chrome.storage.sync.set({ "Ver" : "1" });
-				}
-			});
-		}
 }
